@@ -1,0 +1,39 @@
+{
+  "name": "makimono-mcp",
+  "version": "0.1.0",
+  "description": "AI指示書マーケット「マキモノ」の CLI と MCP サーバー。開発タスクの前に完成済みの指示書を探して読み込み、消費トークンを削る。",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "claude-code",
+    "cursor",
+    "codex",
+    "ai",
+    "prompt",
+    "markdown",
+    "CLAUDE.md"
+  ],
+  "homepage": "https://makimono-md.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seisaku-team-org/makimono-cli.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "makimono-mcp": "./bin/makimono-mcp.mjs",
+    "makimono": "./bin/makimono.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}
