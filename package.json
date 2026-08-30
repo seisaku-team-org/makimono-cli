@@ -1,5 +1,6 @@
 {
   "name": "makimono-mcp",
+  "mcpName": "io.github.seisaku-team-org/makimono",
   "version": "0.1.0",
   "description": "AI指示書マーケット「マキモノ」の CLI と MCP サーバー。開発タスクの前に完成済みの指示書を探して読み込み、消費トークンを削る。",
   "keywords": [

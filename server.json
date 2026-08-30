@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.seisaku-team-org/makimono",
+  "description": "Search a marketplace of finished AI instruction files (Markdown playbooks) and load one before building from scratch. No API key, no account.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/seisaku-team-org/makimono-cli",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "makimono-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
