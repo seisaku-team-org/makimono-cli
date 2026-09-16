@@ -13,7 +13,7 @@ Your agent searches for a finished playbook *before* designing from scratch, loa
 **Claude Code**
 
 ```
-claude mcp add makimono -- npx -y makimono-mcp
+claude mcp add makimono -- npx -y github:seisaku-team-org/makimono-cli
 ```
 
 **Cursor / Windsurf / any MCP client** — add to your config:
@@ -21,7 +21,7 @@ claude mcp add makimono -- npx -y makimono-mcp
 ```json
 {
   "mcpServers": {
-    "makimono": { "command": "npx", "args": ["-y", "makimono-mcp"] }
+    "makimono": { "command": "npx", "args": ["-y", "github:seisaku-team-org/makimono-cli"] }
   }
 }
 ```
@@ -29,7 +29,7 @@ claude mcp add makimono -- npx -y makimono-mcp
 **Or let it write the config for you**, in your project directory:
 
 ```
-npx -y makimono-mcp init
+npx -y github:seisaku-team-org/makimono-cli init
 ```
 
 No API key. No account. No auth of any kind.
@@ -47,10 +47,10 @@ No API key. No account. No auth of any kind.
 The same binary works as a CLI when you pass a subcommand:
 
 ```
-npx -y makimono-mcp search "Gmail auto-triage"
-npx -y makimono-mcp get gmail-triage
-npx -y makimono-mcp get gmail-triage -o playbook.md
-npx -y makimono-mcp report gmail-triage 120000
+npx -y github:seisaku-team-org/makimono-cli search "Gmail auto-triage"
+npx -y github:seisaku-team-org/makimono-cli get gmail-triage
+npx -y github:seisaku-team-org/makimono-cli get gmail-triage -o playbook.md
+npx -y github:seisaku-team-org/makimono-cli report gmail-triage 120000
 ```
 
 ## Why this exists
@@ -79,20 +79,20 @@ AI 指示書マーケット「[マキモノ](https://makimono-md.vercel.app)」�
 ### 導入 (Claude Code)
 
 ```
-claude mcp add makimono -- npx -y makimono-mcp
+claude mcp add makimono -- npx -y github:seisaku-team-org/makimono-cli
 ```
 
 プロジェクトの `.mcp.json` に書き込ませる場合:
 
 ```
-npx -y makimono-mcp init
+npx -y github:seisaku-team-org/makimono-cli init
 ```
 
 ### CLI として使う
 
 ```
-npx -y makimono-mcp search "GAS 定期実行"
-npx -y makimono-mcp get gas-command-queue
+npx -y github:seisaku-team-org/makimono-cli search "GAS 定期実行"
+npx -y github:seisaku-team-org/makimono-cli get gas-command-queue
 ```
 
 ### 出品する

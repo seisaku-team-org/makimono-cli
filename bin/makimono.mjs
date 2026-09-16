@@ -95,7 +95,7 @@ async function main() {
       console.log("すでに登録済みです。変更はありません。");
       return;
     }
-    conf.mcpServers.makimono = { command: "npx", args: ["-y", "makimono-mcp"] };
+    conf.mcpServers.makimono = { command: "npx", args: ["-y", "github:seisaku-team-org/makimono-cli"] };
     fs.writeFileSync(file, JSON.stringify(conf, null, 2) + "\n", "utf8");
     console.log(`登録しました: ${file}\n次に AI クライアント(Claude Code / Cursor 等)を開き直せば有効になります。`);
     return;
